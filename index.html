@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Evklid</title>
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+  
+<style>
+	/* .swiper-container {
+	   width: 1770px;
+	   height: 620px;
+	}
+	.swiper-slide {
+		padding: 103px 0 91px 78px;
+		block-size: cover;
+		background-repeat: no-repeat;
+	} */
+</style>
+</head>
+<body>
+	<div class="container">
+    <header class="header">
+        <div class="header-logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+			<div class="header-part">
+				<div class="header-nav">
+						<nav>
+							<ul class="header-nav-list">
+								<li class="header-nav-list-item">
+									<a href="">О нас</a>
+								</li>
+								<li class="header-nav-list-item">
+									<a href="">Проекты</a>
+								</li>
+								<li class="header-nav-list-item">
+									<a href="">Этапы</a>
+								</li>
+								<li class="header-nav-list-item">
+									<a href="">Отзывы</a>
+								</li>
+								<li class="header-nav-list-item">
+									<a href="">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header-search">
+						<form action="" class="header-search-form">
+							<button aria-label="Поиск по сайту" class="header-search-form-button " type="submit"></button>
+						</form>
+					</div>
+					<img class="header-search-burger" src="./img/Burger.svg" alt="">
+			</div>
+			
+        
+		</header>
+		<div class="header-mobile">
+			<div id="burger" class="header-mobile-burger">
+					<span></span>
+			<!-- <div><img  id='close' class="open" src="./img/Burger.svg" alt=""></div>
+			<div><img id="open"class="header-search-burger-close" src="./img/close.svg" alt=""></div> -->
+			
+				
+				
+				<!-- <span></span> -->
+			</div>
+			<div id="nav" class="header-nav">
+				<nav>
+					<ul class="header-nav-list">
+						<li class="header-nav-list-item">
+							<a href="">О нас</a>
+						</li>
+						<li class="header-nav-list-item">
+							<a href="">Проекты</a>
+						</li>
+						<li class="header-nav-list-item">
+							<a href="">Этапы</a>
+						</li>
+						<li class="header-nav-list-item">
+							<a href="">Отзывы</a>
+						</li>
+						<li class="header-nav-list-item">
+							<a href="">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="header-search">
+				<form action="" class="header-search-form">
+					<button aria-label="Поиск по сайту" class="header-search-form-button " type="submit">
+					</button>
+				</form>
+			</div>
+		</div>
+		
+			<div class="swiper-container main">
+				<!-- Additional required wrapper -->
+				<div aria-label="Основная информация" class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image: url(img/img-1.jpg)">
+						<h1> Проектные решения любой сложности</h1>
+						<p>Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+						<button class="main-button button-orange">Заказать расчет</button></div>
+					<div class="swiper-slide" style="background-image: url(img/img-2.png)">
+						<h1> Проектные решения любой сложности</h1>
+						<p>Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+						<button class="main-button button-orange">Заказать расчет</button></div>
+					<div class="swiper-slide"style="background-image: url(img/img.png)">
+						<h1> Проектные решения любой сложности</h1>
+						<p>Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+						<button class="main-button button-orange">Заказать расчет</button></div>
+					...
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			
+			</div>
+		<!-- <section class="main">
+			<h1> Проектные решения любой сложности</h1>
+			<p>Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+			<button class="main-button button-orange">Заказать расчет</button> -->
+		</section>
+	<div class="container_2">
+		<section class="describe">
+			<h2>О нас</h2>
+			<p>Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип  <img src="./img/i - Тултип.png" alt="">     будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. 
+				Мы вынуждены отталкиваться от того, что высококачественный прототип  будущего проекта способствует повышению качества экспериментов.
+			</p> 
+			<div class="describe-columns">
+				<div class="describe-columns-left">
+					<!-- <img src="img/Rectangle 2.jpg" alt=""> -->
+					<div class="describe-columns-left-wrap-img">
+
+					</div>
+					<div class="describe-columns-left-wrap-text">
+						<p>Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
+						</p>
+						<button class="describe-columns-left-text-button btn-transp">Подробнее</button>
+					</div>
+						
+					</div>
+			
+				<div class="describe-columns-right">
+					<div class="describe-columns-right-box">
+						<div class="describe-columns-right-box-img">
+							<img src="img/Group 25.png" alt="geometry">
+						</div>
+						<div class="describe-columns-right-box-text">
+							<h3> Консультация с широким активом</h3>
+							<p>А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
+							</p>
+						</div>
+					</div>
+					<div class="describe-columns-right-box">
+						<div class="describe-columns-right-box-img" >
+						<img src="img/Group 24.png" alt="geometry">	
+						</div>
+						
+						<div class="describe-columns-right-box-text right">
+							<h3>В своём стремлении повысить</h3>
+						<p>Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.
+						</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="work">
+			<h2 class="work-h2">Как мы работаем</h2>
+			<ul class="work-list">
+				<li class="work-list-item"><a href="">1 шаг</a></li>
+				<li class="work-list-item"><a href="">2 шаг</a></li>
+				<li class="work-list-item"><a href="">3 шаг</a></li>
+				<li class="work-list-item"><a href="">4 шаг</a></li>
+			</ul>
+      <div class="work-section">
+				<div class="work-section-text">
+					<h3>Проводим консультацию</h3>
+					<p>
+						Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+				  <div class="work-section-text-btns">
+						<button class="work-section-text-button-first button-orange">Подробнее</button>
+						<button class="work-section-text-button-second button-black">Договор</button>
+					</div>
+				</div>
+				<div class="work-section-img">
+					<img src="img/Rectangle 18.jpg" alt="consultation">
+				</div>
+			</div>
+		</section>
+		<section aria-label="Ответы на частые вопросы" class="question">
+			<h2>Часто задаваемые вопросы</h2>
+			<div id="accordion">
+				<h3 class="question-list-item">Из чего формируется конечная стоимость проекта?<img src="img/+х.png" alt=""></h3>
+				<div>
+				  <p>
+				  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+				  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+				  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+				  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+				  </p>
+				</div>
+				<h3 class="question-list-item">У меня есть свой проект. Сможем ли мы его доработать / реализовать? <img src="img/+х.png" alt=""></h3>
+				<div>
+				  <p>
+				  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+				  purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+				  velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+				  suscipit faucibus urna.
+				  </p>
+				</div>
+				<h3 class="question-list-item">Я выбираю между разными компаниями. В чём ваше отличие? <img src="img/+х.png" alt=""></h3>
+				<div>
+				  <p>
+				  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+				  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+				  ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+				  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+				  </p>
+				  <ul>
+					<li>List item one</li>
+					<li>List item two</li>
+					<li>List item three</li>
+				  </ul>
+				</div>
+				<h3 class="question-list-item">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? <img src="img/+х.png" alt=""></h3>
+				<div>
+				  <p>
+				  Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+				  et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+				  faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+				  mauris vel est.
+				  </p>
+				  <p>
+				  Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+				  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+				  inceptos himenaeos.
+				  </p>
+				</div>
+				<h3 class="question-list-item">Могу ли я вернуть деньги на одном из этапов работ? <img src="img/+х.png" alt=""></h3>
+				<div>
+				  <p>
+				  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+				  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+				  ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+				  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+				  </p>
+			  </div>
+			   
+			   
+			
+		</section>
+		</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-columns footer-columns-first">
+				<!-- <img src="img/Логотип 2 1.png" alt="logo"> -->
+				<p>
+					Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. 
+				</p>
+			</div>
+			<div class="footer-columns footer-columns-second">
+				<h3>Оставить заявку</h3>
+				<form aria-label="Форма обратной связи" action="" class="footer-columns-second-form">
+					<input class="footer-columns-second-form-input" type="text" placeholder="Фамилия, Имя и Отчество*">
+					<input class="footer-columns-second-form-input" type="email" placeholder="E-mail*">
+					<textarea class="footer-columns-second-form-input" name="" id="" cols="30" rows="10" placeholder="Сообщения"></textarea>
+					<div class="footer-columns-second-form-btn">
+						<button class="button-orange">Отправить данные</button>
+					  <p><input aria-label="Согласие на обработку данных" type="checkbox" value="Согласен на обработу данных" checked>Согласен на обработу данных</p>
+					</div>
+				</form>
+			</div>
+			<div class="footer-columns footer-columns-third">
+				<img class="logo-third" src="img/Логотип 2 1.png" alt="logo">
+				<ul>
+					<li class="footer-columns-list-item"><a href="">О нас</a></li>
+					<li class="footer-columns-list-item"><a href="">Проекты</a></li>
+					<li class="footer-columns-list-item"><a href="">Отзывы</a></li>
+					<li class="footer-columns-list-item"><a href="">Договор оферты</a></li>
+					<li class="footer-columns-list-item"><a href="">Договор подряда</a></li>
+					<li class="footer-columns-list-item"><a href="">Конфиденциальность</a></li>
+					<li class="footer-columns-list-item"><a href="">Партнерское соглашение</a></li>
+				</ul>
+				<div class="footer-columns-social-right">
+					<img aria-label="Перейти в фейсбук" src="./img/fb.png" alt="facebook">
+					<img aria-label="Перейти вконтакте" src="./img/vk.png" alt="vkontakte">
+					<img aria-label="Перейти в инстаграм" src="./img/instagram (1).png" alt="instagram">
+				</div>
+			</div>
+		</footer>
+	<script src="script/script.js"></script>
+</body>
+</html>
